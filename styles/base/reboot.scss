@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  font-size: 100%;
+  @include responsive(xs) {
+    font-size: 90%;
+  }
+}
+
+body {
+  font-family: $font-normal;
+  font-size: 1rem;
+  line-height: 1.62;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+div.gatsby-resp-iframe-wrapper {
+  iframe {
+    border: 0;
+  }
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+  letter-spacing: 0.3px;
+  transition: 0.15s;
+}
