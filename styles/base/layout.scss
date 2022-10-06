@@ -1,4 +1,9 @@
 body {
   overflow-x: hidden;
   transition: color 0.15s, background-color 0.15s;
+
+  .container {
+    width: $container-size;
+    margin: 0px auto;
+  }
 }

@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  color: $primary;
   font-family: $font-normal;
   font-size: 1rem;
   line-height: 1.62;
@@ -15,7 +16,9 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-ol {
+ol,
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -26,16 +29,22 @@ button {
   background-color: transparent;
 }
 
-div.gatsby-resp-iframe-wrapper {
-  iframe {
-    border: 0;
-  }
-}
-
 *,
 :after,
 :before {
   box-sizing: inherit;
   letter-spacing: 0.3px;
   transition: 0.15s;
+}
+
+h1#logo {
+  color: $white;
+  strong {
+    font-weight: 600;
+  }
+}
+footer h1#logo {
+  color: $primary;
+  text-align: center;
+  padding: 50px;
 }

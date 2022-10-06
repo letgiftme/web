@@ -1,0 +1,25 @@
+button.button {
+  padding: 10px 18px;
+  border-radius: 5px;
+
+  &.primary-button {
+    background-color: $yellow;
+    color: $primary;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &.secondary-button {
+    border: 1px solid $primary;
+    color: $primary;
+    font-weight: 400;
+    font-size: 1.1rem;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
