@@ -18,7 +18,8 @@ nav {
 
     li {
       font-size: 1.2rem;
-      a {
+      a,
+      button {
         color: $white;
         font-weight: 300;
         &:hover {

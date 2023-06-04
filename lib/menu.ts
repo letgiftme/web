@@ -11,12 +11,16 @@ export default [
     key: 'how-it-works',
     label: 'How it works?'
   },
+  // {
+  //   key: 'login',
+  //   label: "Login"
+  // },
   {
-    key: 'register',
+    key: '/questions/1',
     label: "Let's start!"
   },
-  {
-    key: 'login',
-    label: "Login"
-  }
+  // {
+  //   key: 'logout',
+  //   label: "Logout"
+  // }
 ]
