@@ -1,0 +1,23 @@
+.questions-layout {
+  .progress-bar {
+    width: 100%;
+    background: $gray;
+    height: 8px;
+
+    .active {
+      background: $secondary;
+      transition: 1s;
+      height: 100%;
+    }
+  }
+
+  .content {
+    padding: 30px 20px;
+    width: 70%;
+    margin: 40px auto;
+    #logo {
+      color: $primary;
+      margin-bottom: 70px;
+    }
+  }
+}

@@ -55746,25 +55746,23 @@
           const route =
             _normalizeTrailingSlash.removePathTrailingSlash(pathname)
           await Promise.all([
-            this.pageLoader
-              ._isSsg(route)
-              .then(
-                isSsg =>
-                  !!isSsg &&
-                  fetchNextData(
-                    this.pageLoader.getDataHref({
-                      href: url,
-                      asPath: resolvedAs,
-                      ssg: !0,
-                      locale:
-                        void 0 !== options.locale ? options.locale : this.locale
-                    }),
-                    !1,
-                    !1,
-                    this.sdc,
-                    !0
-                  )
-              ),
+            this.pageLoader._isSsg(route).then(
+              isSsg =>
+                !!isSsg &&
+                fetchNextData(
+                  this.pageLoader.getDataHref({
+                    href: url,
+                    asPath: resolvedAs,
+                    ssg: !0,
+                    locale:
+                      void 0 !== options.locale ? options.locale : this.locale
+                  }),
+                  !1,
+                  !1,
+                  this.sdc,
+                  !0
+                )
+            ),
             this.pageLoader[options.priority ? 'loadPage' : 'prefetch'](route)
           ])
         }
