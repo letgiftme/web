@@ -1,0 +1,32 @@
+#colors {
+  display: flex;
+  gap: 20px;
+
+  li {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    &.primary {
+      background-color: $primary;
+    }
+    &.secondary {
+      background-color: $secondary;
+    }
+    &.white {
+      background-color: $white;
+    }
+    &.dark-red {
+      background-color: $dark-red;
+    }
+    &.red {
+      background-color: $red;
+    }
+    &.yellow {
+      background-color: $yellow;
+    }
+    &.gray {
+      background-color: $gray;
+    }
+  }
+}

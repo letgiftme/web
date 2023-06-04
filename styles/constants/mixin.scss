@@ -1,0 +1,18 @@
+// default border-radius
+@mixin default-radius {
+  border-radius: 4px;
+}
+
+// Responsive
+@mixin responsive($class) {
+  @if $class == xs {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $class == s {
+    @media only screen and (max-width: 992px) and (min-width: 767px) {
+      @content;
+    }
+  }
+}

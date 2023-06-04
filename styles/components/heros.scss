@@ -1,0 +1,44 @@
+section.hero {
+  &.header-hero {
+    padding-left: 50px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 540px;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  &.action-hero {
+    padding: 70px 0;
+    background-color: $yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    span {
+      font-weight: 200;
+      font-size: 1.7rem;
+    }
+  }
+  &.about-hero {
+    background-color: $gray;
+    padding: 70px 80px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.7rem;
+
+    strong {
+      font-weight: 300;
+    }
+  }
+}

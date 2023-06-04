@@ -6,7 +6,7 @@ export default {
   }
 }
 
-const Template = args => <h2 {...args}>deneem</h2>
+const Template = args => <h2 {...args}>{args.label}</h2>
 
 export const Primary = Template.bind({})
 Primary.args = {
