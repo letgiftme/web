@@ -22,6 +22,6 @@
     "**/*.tsx",
     "components/logo/index.stories.js",
     "components/sections/about/index.stories.js"
-  ],
+, "netlifyAuth.js"  ],
   "exclude": ["node_modules"]
 }
