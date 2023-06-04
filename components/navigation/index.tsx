@@ -8,7 +8,7 @@ const NavigationWrapper = () => {
       {MenuItems.map(({ key, label }: { key: string; label: string }) => {
         return (
           <li key={key}>
-            <Link href={key}>
+            <Link href={key === "login" ? "/api/auth/login" : key}>
               <a>{label}</a>
             </Link>
           </li>

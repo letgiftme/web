@@ -14,5 +14,9 @@ export default [
   {
     key: 'register',
     label: "Let's start!"
+  },
+  {
+    key: 'login',
+    label: "Login"
   }
 ]
