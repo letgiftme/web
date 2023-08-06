@@ -4,6 +4,10 @@ nav {
     gap: 25px;
     position: relative;
     align-items: center;
+    @include responsive(xs) {
+      flex-direction: column;
+      gap: 10px;
+    }
 
     &:after {
       content: '';
@@ -14,13 +18,63 @@ nav {
       width: 66px;
       height: 2px;
       background-color: $yellow;
+
+      @include responsive(xs) {
+        display: none;
+      }
     }
 
     li {
       font-size: 1.2rem;
+
+      @include responsive(xs) {
+        &:last-child a {
+          color: $yellow;
+        }
+      }
       a {
         color: $white;
         font-weight: 300;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+  &#navigation-mobile {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    .mobile-menu-disable {
+      display: none;
+    }
+    .close-icon {
+      position: fixed;
+      z-index: 1000;
+      right: 50px;
+    }
+    .mobile-menu-active {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba($color: #000000, $alpha: 0.95);
+      z-index: 999;
+      overflow-y: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+
+      li a {
+        font-size: 1.8rem;
+        color: white;
         &:hover {
           color: $yellow;
         }
