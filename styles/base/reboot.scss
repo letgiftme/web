@@ -39,6 +39,9 @@ button {
 
 h1#logo {
   color: $white;
+  &:hover {
+    cursor: pointer;
+  }
   strong {
     font-weight: 600;
   }
@@ -47,4 +50,7 @@ footer h1#logo {
   color: $primary;
   text-align: center;
   padding: 50px;
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -1,22 +1,14 @@
 export default [
   {
-    key: 'home',
-    label: 'Homepage'
-  },
-  {
-    key: 'about',
+    key: '#about',
     label: 'About us'
   },
   {
-    key: 'how-it-works',
+    key: '#how-works',
     label: 'How it works?'
   },
   {
     key: 'register',
     label: "Let's start!"
   },
-  {
-    key: 'login',
-    label: "Login"
-  }
 ]

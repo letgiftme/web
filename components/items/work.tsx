@@ -6,7 +6,7 @@ interface WorkProps {
 
 const HowWorks: React.FC<{ data: WorkProps[] }> = ({ data }) => {
   return (
-    <div className="container">
+    <div id="how-works" className="container">
       <ul id="about-item">
         {data.map((item: WorkProps) => (
           <li key={item.order}>

@@ -35,7 +35,7 @@ const ActionHero = () => {
 
 const AboutHero = () => {
   return (
-    <section className="hero about-hero">
+    <section id="about" className="hero about-hero">
       <div className="container">
         We are here to solve the problems experienced in
         <strong> choosing a gift</strong>. Invite the friend you want to gift
