@@ -4,6 +4,10 @@ nav {
     gap: 25px;
     position: relative;
     align-items: center;
+    @include responsive(xs) {
+      flex-direction: column;
+      gap: 10px;
+    }
 
     &:after {
       content: '';
@@ -14,10 +18,20 @@ nav {
       width: 66px;
       height: 2px;
       background-color: $yellow;
+
+      @include responsive(xs) {
+        display: none;
+      }
     }
 
     li {
       font-size: 1.2rem;
+
+      @include responsive(xs) {
+        &:last-child a{
+          color: $yellow;
+        }
+      }
       a {
         color: $white;
         font-weight: 300;

@@ -23,11 +23,17 @@ header {
       align-items: flex-start;
       height: 100%;
 
+      @include responsive(xs) {
+        width: 100%;
+      }
       .header {
         width: $container-size;
         display: flex;
         justify-content: space-between;
         padding: 30px 50px;
+
+        @include responsive(xs) {
+        }
       }
       section {
         margin-top: -70px;

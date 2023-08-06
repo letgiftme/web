@@ -1,8 +1,16 @@
 import Link from 'next/link'
 // lib
 import MenuItems from '../../lib/menu'
+import useWindowSize from 'hooks/useResponsive';
 
 const NavigationWrapper = () => {
+  const isMobile = useWindowSize();
+
+  if (isMobile) {
+    return <nav id="navigation">
+      
+    </nav>
+  }
   return (
     <nav id="navigation">
       {MenuItems.map(({ key, label }: { key: string; label: string }) => {

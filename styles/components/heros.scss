@@ -1,4 +1,7 @@
 section.hero {
+  @include responsive(xs) {
+    width: 100%;
+  }
   &.header-hero {
     padding-left: 50px;
     color: $white;

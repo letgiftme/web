@@ -5,5 +5,8 @@ body {
   .container {
     width: $container-size;
     margin: 0px auto;
+    @include responsive(xs) {
+      width: 95%;
+    }
   }
 }
