@@ -15,6 +15,11 @@
     padding: 30px 20px;
     width: 70%;
     margin: 40px auto;
+    @include responsive(xs) {
+      margin: 10px auto;
+      padding: 20px 10px;
+      width: 90%;;
+    }
     #logo {
       color: $primary;
       margin-bottom: 70px;
